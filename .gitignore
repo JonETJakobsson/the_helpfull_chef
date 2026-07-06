@@ -1,0 +1,16 @@
+# --- Private household data ---
+# Ratings, meal history and household details are personal.
+# They are ignored by default so the repository can be shared publicly
+# while keeping only the reusable knowledge (recipes/ + ingredients/).
+# Remove the line below if you want to version-control your household data
+# in a PRIVATE repository.
+household/
+
+# --- Generated weekly outputs ---
+# Weekly menus are kept in git as a nice history of what you have cooked.
+# Shopping lists are throwaway; ignore them by uncommenting the next line.
+# shopping-lists/
+
+# --- OS / editor noise ---
+.DS_Store
+Thumbs.db

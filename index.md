@@ -16,6 +16,11 @@ Food-planning knowledge base. Everything here is authored and maintained by the
 * [ingredients/](ingredients/) - Canonical ingredient catalogue used to normalise
   names and build shopping lists.
 
+# Culinary knowledge
+
+* [knowledge/](knowledge/) - Cooking know-how and food chemistry: principles, techniques,
+  troubleshooting and substitutions the agent uses to improve recipes and give tips.
+
 # Household (private)
 
 * [household/](household/) - Family members, per-member ratings and meal history.

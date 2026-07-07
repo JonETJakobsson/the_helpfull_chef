@@ -41,3 +41,9 @@ timestamp: 2026-07-06T00:00:00Z
 5. (15 min) Koka ihop grädde med rivet citronskal och citronsaft. Red med vetemjöl,
    sjud ett par minuter och smaka av.
 6. (25 min) Häll av potatisen. Servera laxen med sparris, citronsås och kokt potatis.
+
+# Relaterad kunskap
+
+* [Reducera sås](/knowledge/techniques/reducera-sas.md) — koka ihop citronsåsen.
+* [Syra & smakbalans](/knowledge/principles/syra-och-smakbalans.md) — citronen lyfter den feta laxen.
+* [Proteinkoagulering](/knowledge/principles/proteinkoagulering.md) — undvik övertillagad, torr lax.

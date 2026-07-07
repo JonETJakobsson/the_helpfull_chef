@@ -44,3 +44,10 @@ timestamp: 2026-07-06T00:00:00Z
    vetemjölet, koka upp och låt såsen sjuda ihop. Smaka av.
 6. (35 min) Häll av potatisen, mosa med smör och varm mjölk, salta.
 7. (40 min) Servera köttbullar med mos och gräddsås. Gott med lingon.
+
+# Relaterad kunskap
+
+* [Bryning & fräsning](/knowledge/techniques/bryning-och-fransning.md) — stekyta och smak på köttbullarna.
+* [Maillardreaktionen](/knowledge/principles/maillardreaktionen.md) — varför bryningen ger smak.
+* [Reda sås](/knowledge/techniques/reda-sas.md) — förtjocka gräddsåsen.
+* [Stärkelse & förtjockning](/knowledge/principles/starkelse-fortjockning.md) — hur redningen fungerar.

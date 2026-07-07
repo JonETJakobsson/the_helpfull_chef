@@ -44,6 +44,10 @@ All data files are Markdown with YAML front matter, following the
 |---------|----------|--------|
 | Recipes | `recipes/<slug>.md` | `Recipe` |
 | Ingredient catalogue | `ingredients/<slug>.md` | `Ingredient` |
+| Culinary principle | `knowledge/principles/<slug>.md` | `Principle` |
+| Cooking technique | `knowledge/techniques/<slug>.md` | `Technique` |
+| Troubleshooting fix | `knowledge/troubleshooting/<slug>.md` | `Troubleshooting` |
+| Ingredient substitution | `knowledge/substitutions/<slug>.md` | `Substitution` |
 | Family members & defaults | `household/members.md` | `Household` |
 | Per-member ratings | `household/ratings/<member>.md` | `Rating` |
 | Meal history | `household/meal-history/log.md` | _(log, no front matter)_ |
@@ -52,9 +56,9 @@ All data files are Markdown with YAML front matter, following the
 
 ## Privacy & sharing
 
-- `recipes/` and `ingredients/` are the **shareable** knowledge.
+- `recipes/`, `ingredients/` and `knowledge/` are the **shareable** knowledge.
 - `household/` holds **private** data and is git-ignored by default.
-- Never copy ratings, member names or history into `recipes/` or `ingredients/`.
+- Never copy ratings, member names or history into `recipes/`, `ingredients/` or `knowledge/`.
 
 ## Ingredient catalogue
 
@@ -68,3 +72,13 @@ All data files are Markdown with YAML front matter, following the
 
 There is **no** pantry/stock file. "Already have" and "must use up" items are
 conversational inputs captured per week inside the relevant `menus/<week>.md` file.
+
+## Culinary knowledge
+
+- `knowledge/` holds general cooking know-how the agent uses to improve recipes and give
+  tips: `principles/` (food chemistry — the "why"), `techniques/` (methods — the "how"),
+  `troubleshooting/` (symptom → cause → fix) and `substitutions/` (swaps & scaling).
+- Write notes **in your own words**; never copy source text. Back claims with a
+  `# Citations` section linking to authoritative sources.
+- Cross-link recipes to the principles/techniques they rely on, and consult
+  `troubleshooting/` when the user reports how a dish turned out.

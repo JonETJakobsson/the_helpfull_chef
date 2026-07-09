@@ -86,25 +86,22 @@ DTSTART;TZID=Europe/Stockholm:20260713T170000
 DTEND;TZID=Europe/Stockholm:20260713T180000
 SUMMARY:Middag: Korv Stroganoff
 LOCATION:Hemma
-DESCRIPTION:Recept: https://github.com/JonETJakobsson/the_helpfull_chef/blob/main/recipes/korv-stroganoff.md\n\nPortioner: 4\nTillagningstid: 30 min (börja laga ca 16:30)\n\nINGREDIENSER\nGryta:\n- 400 g falukorv\n- 1 gul lök\n- ...\n\nGÖR SÅ HÄR\n1. Koka riset.\n2. ... (escapa kommatecken som \, och radbrytningar som \n)
+DESCRIPTION:Recept: https://jonetjakobsson.github.io/the_helpfull_chef/recipes/korv-stroganoff/\n\nPortioner: 4\nTillagningstid: 30 min (börja laga ca 16:30)\n\nINGREDIENSER\nGryta:\n- 400 g falukorv\n- 1 gul lök\n- ...\n\nGÖR SÅ HÄR\n1. Koka riset.\n2. ... (escapa kommatecken som \, och radbrytningar som \n)
 END:VEVENT
 END:VCALENDAR
 ```
 
 ## Länk till receptet
 
-Varje event inleds med en länk till receptet så mottagaren kan öppna den snyggt renderade
-versionen:
+Varje event inleds med en länk till den snyggt renderade receptsidan på **GitHub Pages**
+(live):
 
-- **GitHub (nu):** `https://github.com/JonETJakobsson/the_helpfull_chef/blob/main/recipes/<slug>.md`
-  — kräver att repot är publikt (eller att mottagaren har åtkomst). GitHub renderar markdown
-  fint, men OKF:s bundle-absoluta `/...`-länkar inuti filen är inte klickbara i blob-vyn.
-- **GitHub Pages (rekommenderat mål):** publicera den delbara delen (`recipes/`,
-  `ingredients/`, `knowledge/`) som en liten webbplats. `household/` är git-ignorerad och
-  följer inte med, så inget privat läcker. Länken blir då
-  `https://jonetjakobsson.github.io/the_helpfull_chef/recipes/<slug>/`.
+- **Bas-URL:** `https://jonetjakobsson.github.io/the_helpfull_chef/recipes/<slug>/`
+- Sajten serverar bara den delbara delen (`recipes/`, `ingredients/`, `knowledge/`);
+  `household/` är git-ignorerad och följer aldrig med, så inget privat läcker.
+- Vid behov finns källfilen som råtext på GitHub: `.../blob/main/recipes/<slug>.md`.
 
-Håll bas-URL:en konsekvent i alla events (default: GitHub-blob tills Pages är uppsatt).
+Håll bas-URL:en konsekvent i alla events.
 
 ## Future upgrade (Concept B)
 

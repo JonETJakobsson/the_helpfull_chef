@@ -53,6 +53,7 @@ All data files are Markdown with YAML front matter, following the
 | Meal history | `household/meal-history/log.md` | _(log, no front matter)_ |
 | Weekly menu | `menus/<year>-w<week>.md` | `WeeklyMenu` |
 | Shopping list | `shopping-lists/<year>-w<week>.md` | `ShoppingList` |
+| Dinner calendar | `calendars/<year>-w<week>.ics` | _(iCalendar, not OKF)_ |
 
 ## Privacy & sharing
 

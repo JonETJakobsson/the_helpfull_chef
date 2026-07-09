@@ -23,9 +23,11 @@ Food-planning knowledge base. Everything here is authored and maintained by the
 
 # Household (private)
 
-* [household/](household/) - Family members, per-member ratings and meal history.
+Hushållsdata (medlemmar, betyg och måltidshistorik) är privat och git-ignorerad, så den
+finns bara lokalt och publiceras aldrig.
 
 # Outputs
 
 * [menus/](menus/) - Planned weekly menus (5 weekday dinners each).
 * [shopping-lists/](shopping-lists/) - Shopping lists generated from menus.
+* [calendars/](calendars/) - Dinner calendar files (.ics) to import into your family calendar.

@@ -14,3 +14,7 @@ household/
 # --- OS / editor noise ---
 .DS_Store
 Thumbs.db
+
+# --- MkDocs build output ---
+docs/
+site/

@@ -5,4 +5,4 @@ Varje meny innehåller de valda vardagsmiddagarna samt de veckospecifika inputs 
 användaren rapporterade vid planeringen (sug, råvaror att använda upp, sådant som redan
 finns hemma).
 
-* _Inga menyer planerade ännu._
+* [2026-w29.md](2026-w29.md) - Demo: vardagsmiddagar för vecka 29 (13–17 juli 2026).

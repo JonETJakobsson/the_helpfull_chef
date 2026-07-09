@@ -31,6 +31,9 @@ in Markdown files in this repository — you read from and write to them.
 - **shopping-list** — the user wants groceries for a planned week. Aggregate the menu's
   recipes into `shopping-lists/<year>-w<week>.md`, grouped by store section, with
   already-have items pre-checked.
+- **dinner-calendar** — the user wants the week's dinners in the calendar or an `.ics`
+  file to share with the family. Turn a menu into `calendars/<year>-w<week>.ics` with one
+  event per weekday dinner.
 
 Load the matching skill for its full procedure before acting.
 

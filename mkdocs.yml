@@ -1,0 +1,70 @@
+site_name: The Helpful Chef
+site_description: Recept, ingredienser och matlagningskunskap — en delbar kokbok.
+site_url: https://jonetjakobsson.github.io/the_helpfull_chef/
+repo_url: https://github.com/JonETJakobsson/the_helpfull_chef
+repo_name: JonETJakobsson/the_helpfull_chef
+edit_uri: blob/main/
+
+# The knowledge bundle lives at the repo root. MkDocs forbids the config file from
+# sitting inside docs_dir, so a 'docs/' folder is assembled at build time (a copy of
+# index.md + recipes/ + ingredients/ + knowledge/ + menus/ + shopping-lists/ + calendars/).
+# See .github/workflows/deploy-docs.yml and scripts/serve-docs.ps1. 'docs/' is git-ignored.
+docs_dir: docs
+
+# Keep the build quiet about intentionally omitted/absolute links.
+validation:
+  omitted_files: ignore
+  absolute_links: ignore
+  unrecognized_links: ignore
+  anchors: ignore
+
+# Rewrites OKF bundle-absolute links (/foo/bar.md) to relative so they work on Pages.
+hooks:
+  - hooks/okf_links.py
+
+theme:
+  name: material
+  language: sv
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.indexes
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.action.view
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Mörkt läge
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Ljust läge
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search:
+      lang: sv

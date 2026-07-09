@@ -1,0 +1,50 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Helpful Chef//Middagsmeny//SV
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:Europe/Stockholm
+BEGIN:STANDARD
+DTSTART:19701025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+TZNAME:CET
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700329T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+TZNAME:CEST
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-w28-fri-rokt-picanha-med-chimichurri@the-helpful-chef
+DTSTAMP:20260709T120000Z
+DTSTART;TZID=Europe/Stockholm:20260710T170000
+DTEND;TZID=Europe/Stockholm:20260710T180000
+SUMMARY:Middag: Rökt picanha med chimichurri
+LOCATION:Hemma
+DESCRIPTION:Recept: https://jonetjakobsson.github.io/the_helpfull_chef/recipes/rokt-picanha-med-chimichurri/\n\nPortioner: 4\nTillagningstid: ca 2\,5 h + torrsaltning kvällen innan (börja röka ca 14:00)\n\nINGREDIENSER\nKött & rub:\n- ca 1\,2 kg picanha (hel med fettkappa)\n- 3 tsk salt (grovt havssalt)\n- 2 tsk svartpeppar\, grovkrossad\n- 1 klyfta vitlök\, riven (valfritt)\nChimichurri:\n- 1 kruka persilja\, finhackad\n- 2 klyftor vitlök\n- 1 färsk chili\n- 1 tsk oregano\n- 2 msk rödvinsvinäger\n- 1 dl olivolja\n- salt\nGrillade grönsaker:\n- 1 zucchini\n- 2 paprika\n- 1 aubergine\n- 1 knippe sparris\n- 1 gul lök\n- 2 msk olivolja\n- salt och peppar\n- 1 citron\nTillbehör:\n- potatis\, grillad i klyftor\n- sallad\n\nGÖR SÅ HÄR\n1. Kvällen innan: snitta fettkappan i rutmönster och torrsalta (~1 % av vikten)\, låt stå oavtäckt i kyl över natten. Peppra på morgonen.\n2. Elda smokern till 110–120 °C med ren\, tunn rök (ek eller fruktträd).\n3. Rök picanhan med fettkappan uppåt tills innertemp 48–50 °C.\n4. Elda glöden hett och bryn köttet\, fettkappan nedåt först\, till innertemp 54 °C (medium rare).\n5. Låt köttet vila 10–15 min.\n6. Chimichurri: blanda persilja\, vitlök\, chili\, oregano och rödvinsvinäger\, rör i olivoljan och salta.\n7. Grilla grönsakerna över glöden medan köttet vilar\; pressa över citron.\n8. Skär picanhan tvärs fibrerna och servera med chimichurri\, grillade grönsaker\, potatis och sallad.
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-w28-sat-klassisk-hamburgare@the-helpful-chef
+DTSTAMP:20260709T120000Z
+DTSTART;TZID=Europe/Stockholm:20260711T170000
+DTEND;TZID=Europe/Stockholm:20260711T180000
+SUMMARY:Middag: Klassisk hamburgare
+LOCATION:Hemma
+DESCRIPTION:Recept: https://jonetjakobsson.github.io/the_helpfull_chef/recipes/klassisk-hamburgare/\n\nPortioner: 4\nTillagningstid: 30 min (börja laga ca 16:30)\n\nINGREDIENSER\nBurgare:\n- 600 g nötfärs\n- smör eller olja till stekning\n- salt och peppar\nTillbehör:\n- 4 hamburgerbröd\n- 4 skivor ost (cheddar)\n- 1 sallad\n- 2 tomater\n- 1 gul lök\n- ketchup\n- senap\n- saltgurka\n\nGÖR SÅ HÄR\n1. Forma färsen löst till fyra biffar (packa inte hårt)\, salta ytan precis före grillning.\n2. Grilla burgarna på hög värme tills de fått rejäl stekyta\, vänd en gång. Lägg på ost sista minuten.\n3. Rosta brödens snittytor gyllene.\n4. Bygg burgaren med sallad\, tomat\, lök\, saltgurka\, ketchup och senap.
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-w28-sun-coq-au-vin@the-helpful-chef
+DTSTAMP:20260709T120000Z
+DTSTART;TZID=Europe/Stockholm:20260712T170000
+DTEND;TZID=Europe/Stockholm:20260712T180000
+SUMMARY:Middag: Coq au vin
+LOCATION:Hemma
+DESCRIPTION:Recept: https://jonetjakobsson.github.io/the_helpfull_chef/recipes/coq-au-vin/\n\nPortioner: 4\nTillagningstid: 1 h 30 min (börja laga ca 15:30)\n\nINGREDIENSER\nGryta:\n- 800 g kycklingfilé (gärna lår)\n- 140 g bacon\n- 5 dl rödvin\n- 3 dl buljong\n- 2 klyftor vitlök\n- 2 msk tomatpuré\n- 2 msk vetemjöl\n- 2 lagerblad\n- 1 tsk timjan\n- smör\nGarnityr:\n- 250 g svamp\n- 200 g gul lök\, små\n\nGÖR SÅ HÄR\n1. Stek baconet knaprigt\, ta upp. Bryn kycklingen i fettet runt om och salta.\n2. Fräs vitlök\, rör i tomatpuré och pudra över mjöl.\n3. Häll på rödvin och buljong\, skrapa loss stekytorna\, tillsätt timjan och lagerblad. Lägg tillbaka kyckling och bacon och sjud under lock ca 45 min.\n4. Bryn svamp och små lökar i smör och rör ner. Smaka av.\n5. Servera med potatis eller bröd.
+END:VEVENT
+END:VCALENDAR

@@ -35,10 +35,15 @@ Turn a weekly menu into a grouped shopping list.
    user said they already have, render the checkbox as checked `- [x]` and append
    `(finns hemma<, mängd om angiven>)`. Everything else is `- [ ]` (to buy).
 6. **Save** to `shopping-lists/<year>-w<week>.md` and add it to `shopping-lists/index.md`.
+7. **Append a plain copy-paste block** at the end of the file: a fenced code block titled
+   "Kopiera till att-göra-app" with **one item per line**, `<mängd> <namn>` and no
+   checkboxes, links or section headings. Include **only the items still to buy** (skip
+   anything marked already-have). This block is what the user pastes straight into a todo
+   app; the grouped checklist above stays for reading and ticking off.
 
 ## Output — `shopping-lists/<year>-w<week>.md`
 
-```markdown
+````markdown
 ---
 type: ShoppingList
 title: Inköpslista vecka <WW> <YYYY>
@@ -62,8 +67,19 @@ timestamp: <ISO 8601>
 
 # Mejeri
 - [ ] 3 dl [Grädde](/ingredients/gradde.md)
-```
 
+# Kopiera till att-göra-app
+
+```
+1 kg Potatis
+2 st Citron
+500 g Nötfärs
+3 dl Grädde
+```
+````
+
+- The plain block lists **only items to buy** (no already-have rows), one per line, so it
+  pastes cleanly into a todo/checklist app. Keep the grouped checklist above it intact.
 - If a user's "already have" amount looks smaller than what's needed, still check it but
   add a short note (e.g. "ca 500 g — kontrollera") so they can verify before shopping.
 

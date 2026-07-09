@@ -93,3 +93,11 @@ links the culinary principles and techniques it relies on under **Relaterad kuns
 # Koreanskt
 
 * [Bibimbap](bibimbap.md) - Risskål med kryddat kött, grönsaker och gochujang.
+
+# Asiatiskt
+
+* [Stekt kycklinglårfilé med soja- och honungsglaze](stekt-kycklinglarfile-med-soja-honungsglaze.md) - Snabbmarinerad, pannstekt lårfilé med glansig soja-honungsglaze och ris.
+
+# Sydamerikanskt
+
+* [Rökt picanha med chimichurri](rokt-picanha-med-chimichurri.md) - Hel picanha rökt på offset smoker med omvänd stekning och fräsch chimichurri.

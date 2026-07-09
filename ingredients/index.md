@@ -43,6 +43,8 @@ merge different spellings when aggregating shopping lists.
 * [Falukorv](falukorv.md) - Svensk falukorv.
 * [Oxfilé](oxfile.md) - Oxfilé eller annan mör biffdetalj.
 * [Kycklingfilé](kycklingfile.md) - Kycklingbröstfilé.
+* [Kycklinglårfilé](kycklinglarfile.md) - Benfri kycklinglårfilé, saftig och smakrik.
+* [Picanha](picanha.md) - Rumpstek med fettkappa (biff med kappa).
 * [Pancetta](pancetta.md) - Italiensk saltad fläsksida.
 * [Bacon](bacon.md) - Rökt bacon.
 * [Fläskkarré](flaskkarre.md) - Fläskkarré för strimling eller grytor.
@@ -96,6 +98,11 @@ merge different spellings when aggregating shopping lists.
 * [Ris](ris.md) - Långkornigt ris.
 * [Gula ärter](gula-arter.md) - Torkade gula ärter för ärtsoppa.
 * [Ljus sirap](ljus-sirap.md) - Ljus sirap.
+* [Honung](honung.md) - Flytande honung för sötma och glaze.
+* [Salt](salt.md) - Salt för kryddning och torrsaltning.
+* [Svartpeppar](svartpeppar.md) - Svartpeppar, helst nymalen.
+* [Rödvinsvinäger](rodvinsvinager.md) - Vinäger på rödvin, bas i chimichurri.
+* [Oregano](oregano.md) - Torkad oregano.
 * [Ättika](attika.md) - Ättika för lag och grytor.
 * [Socker](socker.md) - Strösocker.
 * [Curry](curry.md) - Currypulver.

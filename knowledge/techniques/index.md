@@ -14,6 +14,7 @@
 | [Karamellisera lök](karamellisera-lok.md) | Långsamt bryna lök till sötma. |
 | [Vila kött](vila-kott.md) | Låta kött vila så saften fördelas. |
 | [Torrsaltning](torrsaltning.md) | Salta i förväg för smak och saftighet. |
+| [Rökning](rokning.md) | Lågt och långsamt i vedrök, t.ex. på offset smoker. |
 | [Marinering](marinering.md) | Marinader med syra, enzym och salt. |
 | [Avglasering (deglaze)](avglasering.md) | Lösa upp fond med vätska. |
 | [Smaka av & balansera](smaka-av-och-balansera.md) | Justera salt, syra, fett, sötma och hetta. |

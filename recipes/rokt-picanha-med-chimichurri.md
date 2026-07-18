@@ -84,6 +84,14 @@ timestamp: 2026-07-09T00:00:00Z
   så den blir krispig.
 * **Skär rätt.** Fibrerna byter riktning i picanha — dela i muskler och skär alltid tvärs
   fibrerna för mörast tugga.
+* **Undvik torrt kött.** Picanha är magrare än den ser ut. Dra av köttet redan vid **48 °C**,
+  bryn **snabbt och hett** (inte långsamt — då stiger innertempen för mycket) och vila
+  ordentligt. Skiva tunt tvärs fibrerna och servera gärna med lite sky. Se
+  [Torrt / segt kött](/knowledge/troubleshooting/torrt-kott.md).
+* **Mildare fettsmak?** Gillar du inte den kraftiga smaken från kappan: trimma fettkappan
+  tunnare (~5 mm) före rökning, eller skär picanhan i tjocka biffar med en fettremsa var
+  och grilla på spett (brasiliansk stil) — då renderar mindre fett in i köttet. Bryn
+  kappan krispig och skär bort det mesta före servering.
 
 # Relaterad kunskap
 
@@ -94,3 +102,4 @@ timestamp: 2026-07-09T00:00:00Z
 * [Proteinkoagulering](/knowledge/principles/proteinkoagulering.md) — varför innertemperaturen avgör mörhet och saftighet.
 * [Vila kött](/knowledge/techniques/vila-kott.md) — vila så saften stannar kvar.
 * [Smaka av & balansera](/knowledge/techniques/smaka-av-och-balansera.md) — balansera chimichurrins syra, salt och hetta.
+* [Torrt / segt kött](/knowledge/troubleshooting/torrt-kott.md) — så undviker du att picanhan blir torr.

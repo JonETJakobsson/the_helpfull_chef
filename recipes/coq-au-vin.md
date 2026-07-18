@@ -31,7 +31,9 @@ timestamp: 2026-07-07T00:00:00Z
 # Gör så här
 
 1. (0 min) Stek baconet knaprigt, ta upp. Bryn kycklingen i fettet runt om. Salta.
-2. (15 min) Fräs vitlök, rör i tomatpuré och pudra över mjöl.
+2. (15 min) Fräs vitlök, rör i tomatpuré och fräs ett par minuter så råsmaken försvinner,
+   pudra sedan över mjölet. Blandningen blir en **torr, nästan smulig pasta** — det är rätt.
+   Den löser upp sig och reder såsen när vinet och buljongen sedan kokar in.
 3. (20 min) Häll på rödvin och buljong, skrapa loss stekytorna, tillsätt timjan och lagerblad.
    Lägg tillbaka kyckling och bacon. Sjud under lock ca 45 min.
 4. (70 min) Bryn svamp och små lökar i smör och rör ner. Smaka av.
@@ -42,3 +44,4 @@ timestamp: 2026-07-07T00:00:00Z
 * [Bräsering](/knowledge/techniques/brasering.md) — sjudning i vin ger saftig kyckling och smakrik sås.
 * [Avglasering (deglaze)](/knowledge/techniques/avglasering.md) — stekytorna blir grunden i såsen.
 * [Bryning & fräsning](/knowledge/techniques/bryning-och-fransning.md) — bryn kycklingen för färg och smak.
+* [Reda sås](/knowledge/techniques/reda-sas.md) — mjölet som fräses med tomatpurén reder såsen när vätskan kokar in.

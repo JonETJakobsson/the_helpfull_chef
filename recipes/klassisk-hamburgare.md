@@ -29,8 +29,9 @@ timestamp: 2026-07-07T00:00:00Z
 
 # Gör så här
 
-1. (0 min) Forma färsen löst till fyra biffar (packa inte hårt). Salta ytan precis före
-   stekning.
+1. (0 min) Forma färsen **löst** till fyra biffar — packa inte hårt och överarbeta inte
+   färsen. Platta ut dem försiktigt med stekspaden så de behåller en luftig form. Salta
+   ytan precis före stekning.
 2. (8 min) Stek burgarna på hög värme tills de fått rejäl stekyta, vänd en gång. Lägg på ost
    sista minuten så den smälter.
 3. (16 min) Rosta brödens snittytor gyllene i pannan.

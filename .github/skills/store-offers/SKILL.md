@@ -13,52 +13,81 @@ Capture this week's grocery deals and make them usable by the planner and shoppi
 - "Vad är på extrapris denna vecka?" / "hämta erbjudanden" / "planera billigt".
 - Just before **weekly-menu-planner**, to bias the menu toward discounted ingredients.
 
+## Rhythm — do this at the start of the shopping week
+
+Grocery offers are weekly and often **expire within a day or two**. Capture them at the
+**start of the week you're planning for** (e.g. **Monday**) and plan the menu right after —
+then the menu is built on offers that are still valid when you shop. Pull fresh each week;
+don't reuse last week's list.
+
 ## Store registry
 
 The user's stores live in `household/offers/stores.md` (name, chain, offer URL). Add or
 update stores there — offer pages are location-specific. This whole area is private and
 git-ignored.
 
-## Getting the offers (tiered — the pages are JS-heavy and often block direct fetch)
+## Getting the offers
 
-1. **Paste (most reliable):** ask the user to paste this week's offers, or export them
-   from the store's app. Then parse them. This always works and avoids blocking.
-2. **Aggregator/app data:** if a structured offers source is available, prefer it over
-   scraping a single store's HTML.
-3. **Direct fetch:** last resort only. Expect it to be blocked or empty, and respect each
-   site's terms — do **not** build an aggressive scraper or hammer the site.
+Store offer pages (ICA, City Gross …) are JS-heavy and usually block direct fetching, so
+use an aggregator you can copy from. **Matpriskollen** is the recommended source.
+
+### Using Matpriskollen (recommended)
+
+1. On [matpriskollen.se](https://matpriskollen.se) the user logs in and, once, saves their
+   **favourite stores** (their local shops) and sets their **ort/location**.
+2. Open **Erbjudanden → Mina favoritbutiker** so the page lists this week's offers across
+   all those stores at once — one location covers every nearby store.
+3. The user **copies the whole offers page and pastes it** to the agent.
+4. The agent parses it (see Procedure). No scraping — the user does the copy; we just read it.
+
+### Other options
+
+- **App export / paste** from a single store's app — same idea, one store at a time.
+- **Official API:** **Tjek** (tjek.com) has an API/SDK but is B2B (agreement/key). If you
+  get a key, keep it in `household/` and never commit it. **Matspar** (matspar.se) compares
+  online prices. Prefer an official feed over scraping; respect each service's terms.
+- **Direct fetch** of a store page is a last resort — expect it blocked or empty, and never
+  build an aggressive scraper.
 
 ## Procedure
 
-1. Determine the ISO week and which stores (default: all in the registry).
-2. Obtain the offers (see the tiered approach above).
-3. **Keep only the good deals** — the items worth cooking around — and **match** each to an
-   ingredient concept in `ingredients/` (resolve via title/aliases). Only create a missing
-   concept if it's a real staple you'd cook with.
-4. Note the advertised price next to each item for context (optional). Keep it light — the
-   goal is a simple *list of which ingredients are cheap this week*, not a price database.
-5. **Save** to `household/offers/<store-slug>/<year>-w<week>.md` (type: `Offers`). Never
-   publish store flyer data — keep it in the private area only.
+1. Determine the ISO week you're planning for.
+2. Obtain the offers (see *Getting the offers*).
+3. **Filter to cooking staples.** Drop non-food (pets, household, hygiene), sweets/snacks/
+   ice cream and ready meals. Keep the deals worth cooking around.
+4. **Match** each kept item to an ingredient concept in `ingredients/` (resolve via
+   title/aliases). Only create a missing concept if it's a real staple you'd cook with.
+5. Note the advertised price and store for context. Keep it light — the goal is a simple
+   *list of which ingredients are cheap this week*, not a price database.
+6. **Save** it (type: `Offers`), private and git-ignored — never publish store flyer data:
+   - **Matpriskollen (aggregated):** one file per location per week —
+     `household/offers/matpriskollen-<ort>/<year>-w<week>.md`, with a `Butik` column.
+   - **Single store:** `household/offers/<store-slug>/<year>-w<week>.md`.
 
 ## Offers file format
+
+Aggregated (Matpriskollen) — one file per location, with a `Butik` column:
 
 ```yaml
 ---
 type: Offers
-store: ICA Maxi Gnista
+source: Matpriskollen (Uppsala)
 week: 2026-w30
-source_url: https://www.ica.se/erbjudanden/maxi-ica-stormarknad-gnista-uppsala-1003431/
 fetched: 2026-07-18
+stores: [City Gross Boländerna, ICA Maxi Gnista, Lidl Boländerna, Stora Coop Boländerna]
 tags: [offers]
 timestamp: 2026-07-18T00:00:00Z
 ---
 
-| Vara (annonserad) | Ingrediens | Pris |
-|-------------------|-----------|------|
-| Nötfärs 500 g | [Nötfärs](/ingredients/notfars.md) | 39 kr |
-| Kycklinglårfilé 900 g | [Kycklingfilé](/ingredients/kycklingfile.md) | 69 kr |
+| Vara (annonserad) | Ingrediens | Pris | Butik |
+|-------------------|-----------|------|-------|
+| Blandfärs 70/30 | [Nötfärs](/ingredients/notfars.md) | 89,95/kg | City Gross |
+| Kycklingdelar 1 kg | [Kycklingfilé](/ingredients/kycklingfile.md) | 2 för 59,00 | City Gross |
+| Champinjoner 400 g | [Svamp](/ingredients/svamp.md) | 24,00/frp | ICA Maxi |
 ```
-```
+
+Group rows by section (Kött, Fisk, Grönt, Mejeri & Ost, Skafferi …) for readability. For a
+single store, drop the `Butik` column and add `store:` / `source_url:` to the front matter.
 
 ## Feeds the other skills
 

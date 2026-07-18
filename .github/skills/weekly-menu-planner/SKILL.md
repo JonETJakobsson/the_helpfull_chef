@@ -32,6 +32,8 @@ Gather these — ask briefly for what's missing, but proceed with sensible defau
 - `household/members.md` — members, allergies, diets, dislikes, defaults.
 - `household/ratings/<member>.md` — each member's scores (read all member files once).
 - `household/meal-history/log.md` — when each dish was last served.
+- `household/offers/<store>/<year>-w<week>.md` — this week's discounted ingredients, if the
+  **store-offers** skill has captured them.
 
 ## Selection logic
 
@@ -43,6 +45,8 @@ Score each candidate recipe and pick 5 that also give variety across the week:
   a member strongly dislikes or can't eat.
 - **Recency** — boost dishes not served for a long time; penalise anything served very
   recently (check the log).
+- **Pris / erbjudanden** — soft boost dishes whose key ingredients are on offer this week
+  (from `household/offers/`). Helps hit a cheaper week without overriding taste.
 - **Variety** — avoid repeating the same protein or cuisine on consecutive days; mix
   quick and slower dishes across the week.
 

@@ -34,8 +34,10 @@ Turn a weekly menu into a grouped shopping list.
 5. **Mark already-have items.** Every ingredient the menu needs is listed. For items the
    user said they already have, render the checkbox as checked `- [x]` and append
    `(finns hemma<, mängd om angiven>)`. Everything else is `- [ ]` (to buy).
-6. **Save** to `shopping-lists/<year>-w<week>.md` and add it to `shopping-lists/index.md`.
-7. **Append a plain copy-paste block** at the end of the file: a fenced code block titled
+6. **Mark offers (if available).** If a `household/offers/<store>/<year>-w<week>.md` file
+   exists for the week, annotate matching to-buy items with `(erbjudande: <pris> @ <butik>)`.
+7. **Save** to `shopping-lists/<year>-w<week>.md` and add it to `shopping-lists/index.md`.
+8. **Append a plain copy-paste block** at the end of the file: a fenced code block titled
    "Kopiera till att-göra-app" with **one item per line**, `<mängd> <namn>` and no
    checkboxes, links or section headings. Include **only the items still to buy** (skip
    anything marked already-have). This block is what the user pastes straight into a todo

@@ -34,6 +34,9 @@ in Markdown files in this repository — you read from and write to them.
 - **dinner-calendar** — the user wants the week's dinners in the calendar or an `.ics`
   file to share with the family. Turn a menu into `calendars/<year>-w<week>.ics` with one
   event per weekday dinner.
+- **store-offers** — the user wants this week's grocery offers / to plan cheaply. Gather
+  and normalise offers into `household/offers/<store>/<year>-w<week>.md`; the planner and
+  shopping list then use them to favour discounted ingredients.
 
 Load the matching skill for its full procedure before acting.
 

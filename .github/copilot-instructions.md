@@ -51,6 +51,8 @@ All data files are Markdown with YAML front matter, following the
 | Family members & defaults | `household/members.md` | `Household` |
 | Per-member ratings | `household/ratings/<member>.md` | `Rating` |
 | Meal history | `household/meal-history/log.md` | _(log, no front matter)_ |
+| Store registry | `household/offers/stores.md` | `Stores` |
+| Weekly store offers | `household/offers/<store>/<year>-w<week>.md` | `Offers` |
 | Weekly menu | `menus/<year>-w<week>.md` | `WeeklyMenu` |
 | Shopping list | `shopping-lists/<year>-w<week>.md` | `ShoppingList` |
 | Dinner calendar | `calendars/<year>-w<week>.ics` | _(iCalendar, not OKF)_ |

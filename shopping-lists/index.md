@@ -5,3 +5,4 @@ Varje lista är grupperad efter butiksavdelning. Varor som användaren sagt att 
 redan har hemma listas ändå men är förbockade.
 
 * [2026-w28.md](2026-w28.md) - Grillhelg fredag–söndag (10–12 juli 2026).
+* [2026-w30.md](2026-w30.md) - Vardagsmiddagar tisdag–lördag (21–25 juli 2026).

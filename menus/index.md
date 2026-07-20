@@ -7,3 +7,4 @@ finns hemma).
 
 * [2026-w28.md](2026-w28.md) - Grillhelg fredag–söndag (10–12 juli 2026).
 * [2026-w29.md](2026-w29.md) - Demo: vardagsmiddagar för vecka 29 (13–17 juli 2026).
+* [2026-w30.md](2026-w30.md) - Vardagsmiddagar tisdag–lördag (21–25 juli 2026).

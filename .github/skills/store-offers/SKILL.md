@@ -33,12 +33,40 @@ use an aggregator you can copy from. **Matpriskollen** is the recommended source
 
 ### Using Matpriskollen (recommended)
 
-1. On [matpriskollen.se](https://matpriskollen.se) the user logs in and, once, saves their
-   **favourite stores** (their local shops) and sets their **ort/location**.
-2. Open **Erbjudanden → Mina favoritbutiker** so the page lists this week's offers across
-   all those stores at once — one location covers every nearby store.
-3. The user **copies the whole offers page and pastes it** to the agent.
-4. The agent parses it (see Procedure). No scraping — the user does the copy; we just read it.
+One-time setup: on [matpriskollen.se](https://matpriskollen.se) the user logs in, saves
+their **favourite stores** (local shops) and sets their **ort/location**. Then
+**Erbjudanden → Mina favoritbutiker** lists every nearby store's offers on one page.
+
+#### Fast path — save the page, let the script parse it (preferred; saves tokens)
+
+1. On the **Erbjudanden → Mina favoritbutiker** page, the user saves it with the browser as
+   **"Webpage, Single File" (`.mhtml`)** — Chrome/Edge: Ctrl+S → *Save as type: Webpage,
+   Single File*.
+2. The user drops the file in the repo next to the week's offers, named for the ISO week:
+   `household/offers/matpriskollen-<ort>/<year>-w<week>.mhtml`. The whole `household/` area
+   is git-ignored, so the raw flyer data stays private.
+3. The agent runs the parser to turn ~1 MB of HTML into a compact table **without** loading
+   the raw page into the conversation:
+
+   ```powershell
+   python scripts/parse-matpriskollen.py `
+     household/offers/matpriskollen-<ort>/<year>-w<week>.mhtml `
+     --format md --out household/offers/matpriskollen-<ort>/<year>-w<week>.raw.md
+   ```
+
+   - The script is **stdlib-only** (no install) and reads `.mhtml` or `.html`.
+   - It emits one row per offer with **Vara · Märke/förp. · Pris · Jmf-pris · Butik**.
+     Formats: `md` (default table for reading), `csv`, `json`, `table`.
+   - Use `--out` (not `>`) on Windows — PowerShell's `>` writes UTF-16 and mangles åäö.
+4. The agent **reads the `.raw.md`** (compact, a few hundred short rows) and turns it into
+   the curated Offers file (see Procedure): filter to staples, match to `ingredients/`,
+   save. The `.raw.md` is a throwaway byproduct — leave it or delete it once the curated
+   Offers `.md` exists.
+
+#### Paste path (fallback)
+
+If the user can't save the page, they copy the offers page and paste the text; the agent
+parses that instead. No scraping either way — the user provides the page; we just read it.
 
 ### Other options
 
@@ -52,7 +80,10 @@ use an aggregator you can copy from. **Matpriskollen** is the recommended source
 ## Procedure
 
 1. Determine the ISO week you're planning for.
-2. Obtain the offers (see *Getting the offers*).
+2. **Obtain and parse the offers** (see *Getting the offers*). Prefer the fast path: if the
+   user dropped `household/offers/matpriskollen-<ort>/<year>-w<week>.mhtml`, run
+   `scripts/parse-matpriskollen.py` to produce the `.raw.md` table and read that — don't
+   paste the raw HTML into the conversation.
 3. **Filter to cooking staples.** Drop non-food (pets, household, hygiene), sweets/snacks/
    ice cream and ready meals. Keep the deals worth cooking around.
 4. **Match** each kept item to an ingredient concept in `ingredients/` (resolve via
@@ -91,9 +122,13 @@ single store, drop the `Butik` column and add `store:` / `source_url:` to the fr
 
 ## Feeds the other skills
 
-- **weekly-menu-planner** reads the current week's offers and softly boosts recipes whose
-  key ingredients are on offer.
-- **shopping-list** marks items that are on offer (and at which store).
+Capture offers **first** so the rest of the week builds on them:
+
+- **weekly-menu-planner** reads the current week's offers and uses them as a **seed** —
+  boosting recipes whose key ingredients are on offer — and records which deals steered the
+  menu in the menu's *Planeringsunderlag*.
+- **shopping-list** flags each to-buy item that's on offer with its **price and store**, so
+  it's clear what to buy where.
 
 ## Output
 

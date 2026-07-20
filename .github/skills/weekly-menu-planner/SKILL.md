@@ -32,8 +32,11 @@ Gather these — ask briefly for what's missing, but proceed with sensible defau
 - `household/members.md` — members, allergies, diets, dislikes, defaults.
 - `household/ratings/<member>.md` — each member's scores (read all member files once).
 - `household/meal-history/log.md` — when each dish was last served.
-- `household/offers/<store>/<year>-w<week>.md` — this week's discounted ingredients, if the
-  **store-offers** skill has captured them.
+- `household/offers/matpriskollen-<ort>/<year>-w<week>.md` (aggregated) or
+  `household/offers/<store>/<year>-w<week>.md` (single store) — this week's discounted
+  ingredients, once **store-offers** has captured them. Use these as a **seed** for the
+  menu. If the user dropped a `…/<year>-w<week>.mhtml` but no curated offers `.md` exists
+  yet, run **store-offers** first (it parses the file) so the menu can be built on the deals.
 
 ## Selection logic
 
@@ -45,8 +48,10 @@ Score each candidate recipe and pick 5 that also give variety across the week:
   a member strongly dislikes or can't eat.
 - **Recency** — boost dishes not served for a long time; penalise anything served very
   recently (check the log).
-- **Pris / erbjudanden** — soft boost dishes whose key ingredients are on offer this week
-  (from `household/offers/`). Helps hit a cheaper week without overriding taste.
+- **Pris / erbjudanden** — **seed the week from the offers**: give a boost to dishes whose
+  key ingredients are on offer this week (from `household/offers/`), so the menu leans on
+  what's cheap. Keep it a boost, not an override — taste and variety still win. Note which
+  deals you leaned on so you can list them in *Planeringsunderlag*.
 - **Variety** — avoid repeating the same protein or cuisine on consecutive days; mix
   quick and slower dishes across the week.
 
@@ -71,6 +76,7 @@ timestamp: <ISO 8601>
 - **Sug:** <det användaren önskade>
 - **Använd upp:** <råvaror att prioritera>
 - **Finns hemma:** <sådant användaren sa att de har, med mängd om angiven>
+- **Veckans fynd:** <erbjudanden som styrde valen, med butik — utelämna om inga offers>
 
 # Middagar
 

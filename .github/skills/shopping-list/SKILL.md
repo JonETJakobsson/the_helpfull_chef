@@ -34,14 +34,21 @@ Turn a weekly menu into a grouped shopping list.
 5. **Mark already-have items.** Every ingredient the menu needs is listed. For items the
    user said they already have, render the checkbox as checked `- [x]` and append
    `(finns hemma<, mängd om angiven>)`. Everything else is `- [ ]` (to buy).
-6. **Mark offers (if available).** If a `household/offers/<store>/<year>-w<week>.md` file
-   exists for the week, annotate matching to-buy items with `(erbjudande: <pris> @ <butik>)`.
-7. **Save** to `shopping-lists/<year>-w<week>.md` and add it to `shopping-lists/index.md`.
-8. **Append a plain copy-paste block** at the end of the file: a fenced code block titled
+6. **Mark offers (if available).** Read the week's offers file
+   (`household/offers/matpriskollen-<ort>/<year>-w<week>.md` aggregated, or
+   `household/offers/<store>/<year>-w<week>.md` single store). For every to-buy item whose
+   ingredient is on offer, append `— **erbjudande** <pris> @ <butik>` to the row, so it's
+   clear the item is a deal and where to buy it. Keep track of these for step 7.
+7. **Add a "Veckans erbjudanden (per butik)" section** listing the offer items grouped by
+   store — a quick view of what to grab where. Skip the section if nothing on the list is
+   on offer.
+8. **Save** to `shopping-lists/<year>-w<week>.md` and add it to `shopping-lists/index.md`.
+9. **Append a plain copy-paste block** at the end of the file: a fenced code block titled
    "Kopiera till att-göra-app" with **one item per line**, `<mängd> <namn>` and no
    checkboxes, links or section headings. Include **only the items still to buy** (skip
-   anything marked already-have). This block is what the user pastes straight into a todo
-   app; the grouped checklist above stays for reading and ticking off.
+   anything marked already-have). For items on offer, append ` (<butik>)` so the store is
+   visible when shopping. This block is what the user pastes straight into a todo app; the
+   grouped checklist above stays for reading and ticking off.
 
 ## Output — `shopping-lists/<year>-w<week>.md`
 
@@ -62,7 +69,7 @@ timestamp: <ISO 8601>
 - [x] 2 st [Citron](/ingredients/citron.md) (finns hemma)
 
 # Kött & Chark
-- [ ] 500 g [Nötfärs](/ingredients/notfars.md)
+- [ ] 500 g [Nötfärs](/ingredients/notfars.md) — **erbjudande** 89,95/kg @ City Gross
 
 # Fisk
 - [x] 600 g [Laxfilé](/ingredients/laxfile.md) (finns hemma, ca 500 g — kontrollera)
@@ -70,18 +77,25 @@ timestamp: <ISO 8601>
 # Mejeri
 - [ ] 3 dl [Grädde](/ingredients/gradde.md)
 
+# Veckans erbjudanden (per butik)
+
+**City Gross**
+- 500 g [Nötfärs](/ingredients/notfars.md) — 89,95/kg
+
 # Kopiera till att-göra-app
 
 ```
 1 kg Potatis
 2 st Citron
-500 g Nötfärs
+500 g Nötfärs (City Gross)
 3 dl Grädde
 ```
 ````
 
 - The plain block lists **only items to buy** (no already-have rows), one per line, so it
   pastes cleanly into a todo/checklist app. Keep the grouped checklist above it intact.
+- Offer items carry `— **erbjudande** <pris> @ <butik>` in the checklist and ` (<butik>)`
+  in the copy-paste block, so it's clear which items are deals and where to buy them.
 - If a user's "already have" amount looks smaller than what's needed, still check it but
   add a short note (e.g. "ca 500 g — kontrollera") so they can verify before shopping.
 

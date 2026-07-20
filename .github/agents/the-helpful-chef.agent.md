@@ -34,11 +34,26 @@ in Markdown files in this repository — you read from and write to them.
 - **dinner-calendar** — the user wants the week's dinners in the calendar or an `.ics`
   file to share with the family. Turn a menu into `calendars/<year>-w<week>.ics` with one
   event per weekday dinner.
-- **store-offers** — the user wants this week's grocery offers / to plan cheaply. Gather
-  and normalise offers into `household/offers/<store>/<year>-w<week>.md`; the planner and
-  shopping list then use them to favour discounted ingredients.
+- **store-offers** — the user wants this week's grocery offers / to plan cheaply. Preferred
+  input: the user saves the Matpriskollen **Erbjudanden → Mina favoritbutiker** page as an
+  `.mhtml` and drops it at `household/offers/matpriskollen-<ort>/<year>-w<week>.mhtml`. Run
+  `scripts/parse-matpriskollen.py` in the terminal to extract a compact table (no giant
+  HTML in chat), then filter to staples, match to `ingredients/` and save
+  `household/offers/matpriskollen-<ort>/<year>-w<week>.md`. The planner then **seeds** the
+  menu from these deals and the shopping list flags each offer item with its store.
 
 Load the matching skill for its full procedure before acting.
+
+## Weekly rhythm (offers → menu → list)
+
+When planning a fresh week, work in this order so the week is built on live deals:
+
+1. **store-offers** — if the user dropped a week `.mhtml`, parse it first and save the
+   curated offers file.
+2. **weekly-menu-planner** — seed the 5 dinners from those offers (plus cravings, use-up,
+   ratings, recency).
+3. **shopping-list** — aggregate the menu and flag each offer item with price and store.
+4. **dinner-calendar** — optional, once the menu is settled.
 
 ## First-time setup
 

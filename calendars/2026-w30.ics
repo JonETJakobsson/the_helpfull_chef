@@ -1,0 +1,68 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Helpful Chef//Middagsmeny//SV
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:Europe/Stockholm
+BEGIN:STANDARD
+DTSTART:19701025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+TZNAME:CET
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700329T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+TZNAME:CEST
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-w30-tue-kycklingteriyaki@the-helpful-chef
+DTSTAMP:20260720T120000Z
+DTSTART;TZID=Europe/Stockholm:20260721T170000
+DTEND;TZID=Europe/Stockholm:20260721T180000
+SUMMARY:Middag: Kycklingteriyaki
+LOCATION:Hemma
+DESCRIPTION:Recept: https://jonetjakobsson.github.io/the_helpfull_chef/recipes/kycklingteriyaki/\n\nPortioner: 4\nTillagningstid: 25 min (börja laga ca 16:35)\n\nINGREDIENSER\nKyckling:\n- 700 g kycklingfilé (gärna lår)\n- 1 msk rapsolja\nTeriyakisås:\n- 4 msk soja\n- 3 msk mirin\n- 1 msk socker\n- 10 g ingefära\n- 1 klyfta vitlök\nServering:\n- 4 dl ris\n- 1 msk sesamfrön\n- 1 knippe salladslök\n\nGÖR SÅ HÄR\n1. Koka riset. Rör ihop soja\, mirin\, socker\, riven ingefära och vitlök.\n2. Stek kycklingen gyllene i olja på medelvärme tills nästan genomstekt.\n3. Häll i teriyakisåsen och låt den koka in och reduceras till en blank glasyr som täcker kycklingen.\n4. Skiva och servera på ris\, toppat med sesamfrön och salladslök.
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-w30-wed-risotto-ai-funghi@the-helpful-chef
+DTSTAMP:20260720T120000Z
+DTSTART;TZID=Europe/Stockholm:20260722T170000
+DTEND;TZID=Europe/Stockholm:20260722T180000
+SUMMARY:Middag: Risotto ai funghi
+LOCATION:Hemma
+DESCRIPTION:Recept: https://jonetjakobsson.github.io/the_helpfull_chef/recipes/risotto-ai-funghi/\n\nPortioner: 4\nTillagningstid: 40 min (börja laga ca 16:20)\n\nINGREDIENSER\nRisotto:\n- 3 dl arborioris\n- 300 g svamp\n- 1 gul lök\n- 2 klyftor vitlök\n- 1 dl vitt vin\n- 9 dl grönsaksbuljong\n- 50 g parmesan\, riven\n- 30 g smör\n- 2 msk olivolja\n- salt och peppar\n\nGÖR SÅ HÄR\n1. Håll buljongen sjudande. Stek svampen gyllene i olivolja\, salta\, ta upp.\n2. Fräs finhackad lök och vitlök mjuka i samma panna. Tillsätt riset och fräs tills det glänser.\n3. Häll i vinet och låt koka in. Tillsätt buljong en slev i taget under omrörning.\n4. När riset är krämigt men har tuggmotstånd\, rör ner svampen\, smöret och parmesanen. Smaka av.\n5. Servera direkt medan risotton är lös och krämig.
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-w30-thu-tacos-al-pastor@the-helpful-chef
+DTSTAMP:20260720T120000Z
+DTSTART;TZID=Europe/Stockholm:20260723T170000
+DTEND;TZID=Europe/Stockholm:20260723T180000
+SUMMARY:Middag: Tacos al pastor
+LOCATION:Hemma
+DESCRIPTION:Recept: https://jonetjakobsson.github.io/the_helpfull_chef/recipes/tacos-al-pastor/\n\nPortioner: 4\nTillagningstid: 1 h + marinad kvällen innan (börja laga ca 16:00)\n\nINGREDIENSER\nMarinad & kött:\n- 700 g fläskkarré\n- 2 tsk chilipulver\n- 1 tsk paprikapulver\n- 1 tsk spiskummin\n- 3 klyftor vitlök\n- 1 apelsin\n- 1 msk ättika\n- rapsolja\nServering:\n- 8 st tortilla\n- 0\,5 ananas\n- 1 gul lök\n- 1 kruka koriander\n- 1 lime\n\nGÖR SÅ HÄR\n1. Kvällen innan: mixa kryddor\, vitlök\, apelsinsaft och ättika till en marinad. Lägg i tunt skivad karré.\n2. Stek köttet hastigt på hög värme i omgångar tills det får karamelliserad yta.\n3. Stek ananasbitarna gyllene i samma panna.\n4. Värm tortillorna. Hacka lök och koriander.\n5. Fyll tortillorna med kött\, ananas\, lök\, koriander och en klämma lime.
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-w30-fri-pizza-margherita@the-helpful-chef
+DTSTAMP:20260720T120000Z
+DTSTART;TZID=Europe/Stockholm:20260724T170000
+DTEND;TZID=Europe/Stockholm:20260724T180000
+SUMMARY:Middag: Pizza Margherita
+LOCATION:Hemma
+DESCRIPTION:Recept: https://jonetjakobsson.github.io/the_helpfull_chef/recipes/pizza-margherita/\n\nPortioner: 4\nTillagningstid: ca 3 h inkl. jäsning (börja degen ca 14:00)\n\nINGREDIENSER\nDeg:\n- 6 dl vetemjöl\n- 3 dl vatten\n- 5 g jäst\n- 2 msk olivolja\n- 1 tsk socker\n- 2 tsk salt\nTopping:\n- 300 g krossade tomater\n- 250 g mozzarella\n- 1 kruka basilika\n- olivolja\n\nGÖR SÅ HÄR\n1. Rör ihop jäst\, vatten\, socker\, mjöl\, salt och olivolja till en smidig deg. Knåda väl och låt jäsa 1–2 timmar.\n2. Sätt ugnen så het som möjligt (250–275°C) med plåt/pizzasten inne.\n3. Kläm ut degen tunn. Bred på ett tunt lager krossade tomater\, salta lätt.\n4. Riv över mozzarella. Grädda tills botten är frasig och osten bubblar\, ca 8–10 min.\n5. Toppa med färsk basilika och en skvätt olivolja.
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-w30-sat-chili-con-carne@the-helpful-chef
+DTSTAMP:20260720T120000Z
+DTSTART;TZID=Europe/Stockholm:20260725T170000
+DTEND;TZID=Europe/Stockholm:20260725T180000
+SUMMARY:Middag: Chili con carne
+LOCATION:Hemma
+DESCRIPTION:Recept: https://jonetjakobsson.github.io/the_helpfull_chef/recipes/chili-con-carne/\n\nPortioner: 4\nTillagningstid: 1 h (börja laga ca 16:00)\n\nINGREDIENSER\nGryta:\n- 500 g nötfärs\n- 1 gul lök\n- 3 klyftor vitlök\n- 1 paprika\n- 400 g krossade tomater\n- 400 g kidneybönor\n- 2 msk tomatpuré\n- 2 tsk spiskummin\n- 1–2 tsk chilipulver\n- 1 tsk paprikapulver\n- 2 dl buljong\n- rapsolja\n- salt\nServering:\n- 4 dl ris\n\nGÖR SÅ HÄR\n1. Koka riset. Bryn färsen ordentligt i olja\, salta. Tillsätt hackad lök\, vitlök och paprika och fräs mjukt.\n2. Rör i tomatpuré\, spiskummin\, chili och paprikapulver\, fräs kort.\n3. Tillsätt krossade tomater\, sköljda bönor och buljong. Sjud på svag värme minst 30 min. Smaka av.\n4. Servera med ris.
+END:VEVENT
+END:VCALENDAR

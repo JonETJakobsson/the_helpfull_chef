@@ -149,6 +149,7 @@ merge different spellings when aggregating shopping lists.
 * [Bakpulver](bakpulver.md) - Bakpulver för hävning.
 * [Stjärnanis](stjarnanis.md) - Hel stjärnanis.
 * [Gochujang](gochujang.md) - Koreansk chilipasta.
+* [Sriracha](sriracha.md) - Het chilisås.
 * [Savoiardikex](savoiardi.md) - Sockerkakskex för tiramisu.
 * [Kaffe](kaffe.md) - Starkt bryggt kaffe eller espresso.
 * [Saffran](saffran.md) - Saffran i trådar eller pulver.

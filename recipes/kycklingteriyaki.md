@@ -23,6 +23,14 @@ timestamp: 2026-07-07T00:00:00Z
 * 10 g [Ingefära](/ingredients/ingefara.md)
 * 1 klyfta [Vitlök](/ingredients/vitlok.md)
 
+### Sojamajo (till servering)
+* 3 msk [Majonnäs](/ingredients/majonnas.md)
+* 1 tsk [Soja](/ingredients/soja.md)
+* 1 tsk [Sesamolja](/ingredients/sesamolja.md)
+* 1 tsk [Honung](/ingredients/honung.md)
+* 1–2 tsk [Sriracha](/ingredients/sriracha.md), efter smak
+* 1 klämma [Lime](/ingredients/lime.md)
+
 ### Servering
 * 4 dl [Ris](/ingredients/ris.md)
 * 1 msk [Sesamfrön](/ingredients/sesamfron.md)
@@ -30,11 +38,13 @@ timestamp: 2026-07-07T00:00:00Z
 
 # Gör så här
 
-1. (0 min) Koka riset. Rör ihop soja, mirin, socker, riven ingefära och vitlök.
+1. (0 min) Koka riset. Rör ihop soja, mirin, socker, riven ingefära och vitlök. Vispa ihop
+   sojamajons alla ingredienser i en liten skål och ställ kallt.
 2. (8 min) Stek kycklingen gyllene i olja på medelvärme tills nästan genomstekt.
-3. (16 min) Häll i teriyakisåsen och låt den koka in och reduceras till en blank glasyr som
-   täcker kycklingen.
-4. (22 min) Skiva och servera på ris, toppat med sesamfrön och salladslök.
+3. (16 min) Häll i teriyakisåsen och låt den koka in till en blank glasyr som täcker
+   kycklingen. Vill du ha en rinnigare sås att ringla över riset, reducera den mindre.
+4. (22 min) Skiva och servera på ris, toppat med sesamfrön och salladslök. Ringla över
+   sojamajon eller servera den som dipp – ger krämighet och lite hetta mot torrheten.
 
 # Relaterad kunskap
 

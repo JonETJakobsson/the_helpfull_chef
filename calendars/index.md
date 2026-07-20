@@ -6,3 +6,4 @@ familjen veckans middagar.
 
 * [2026-w28.ics](2026-w28.ics) - Grillhelg fredag–söndag (10–12 juli 2026).
 * [2026-w29.ics](2026-w29.ics) - Demo: middagar för vecka 29 (13–17 juli 2026).
+* [2026-w30.ics](2026-w30.ics) - Vardagsmiddagar tisdag–lördag (21–25 juli 2026).
